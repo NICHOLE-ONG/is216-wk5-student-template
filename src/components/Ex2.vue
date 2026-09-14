@@ -45,7 +45,7 @@ function reset() {
 
         <div style="margin-top: 14px;">
             <!-- C. Display winner / status here -->
-             Winner: {{ scoreA === maxScore ? teamA : scoreB === maxScore ? teamB :""}}
+             {{ scoreA === maxScore ? `Winner: ${teamA}` : scoreB === maxScore ? `Winner: ${teamB}` :"No winner yet. Keep playing!"}}
         </div>
 
 

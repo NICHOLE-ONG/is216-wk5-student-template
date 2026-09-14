@@ -27,7 +27,7 @@ function additem(){
             <button v-on:click="deleteitem(index)">Delete</button>
         </li>
      </ul>
-     <input type="text" v-model="newitem">
+     <input type="text" v-model="newitem" v-on:keyup.enter="additem">
      <button v-on:click="additem"> Add!</button>
 
    
