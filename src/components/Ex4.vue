@@ -12,8 +12,7 @@ const newitem=ref('')
 function additem(){
     if (newitem.value.trim() !== '') {
         items.value.push(newitem.value)
-        newitem.value = ''
-}
+        newitem.value = ''}
 }
 
 </script>
